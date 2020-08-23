@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Heaven</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="banner">
+			<h2 id="text">Heaven</h2>
+			
+			<div class="clouds">
+				
+				<img src="cloud1.png" style="--i:1;">
+				<img src="cloud2.png" style="--i:2;">
+				<img src="cloud3.png" style="--i:3;">
+				<img src="cloud4.png" style="--i:4;">
+				<img src="cloud5.png" style="--i:5;">
+				<img src="cloud1.png" style="--i:10;">
+				<img src="cloud2.png" style="--i:9;">
+				<img src="cloud3.png" style="--i:8;">
+				<img src="cloud4.png" style="--i:7;">
+				<img src="cloud5.png" style="--i:6;">
+			</div>
+		</div>
+		
+		<section>
+			<h2>Bithe Website Parallax</h2>
+			<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+		</section>
+		
+		<script type="text/javascript">
+			let text = document.getElementById('text');
+			window.addEventListener('scroll', function() {
+				let value = window.scrollY;
+				text.style.marginBottom = value * 2 + 'px';
+			})
+		</script>
+	</body>
+</html>
